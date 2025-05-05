@@ -1,0 +1,11 @@
+#https://www.autohotkey.com/ 2.x
+#Send Clipboard to keyboad for iLO,...
+
+cp4tw.ahk:
+
+^t::
+{
+    ClipWait
+    Sleep 5000
+    SendUnicodeString(A_Clipboard)
+}
