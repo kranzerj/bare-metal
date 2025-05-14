@@ -6,6 +6,7 @@ cp4tw.ahk:
 ^t::
 {
     ClipWait
-    Sleep 5000
-    SendUnicodeString(A_Clipboard)
+    Sleep 5000  ; 5 Sekunden Zeit, ins Zielprogramm zu wechseln
+    Send("{Text}" . A_Clipboard)
 }
+
